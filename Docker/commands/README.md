@@ -61,10 +61,10 @@ docker start <container ID/name>
 docker top <container name/id>
 ```
 
-- To check stats of running container.
+- To check status of running container.
 
 ```bash
-docker stats <container name/id>
+docker status <container name/id>
 ```
 
 - Check the config and info of a container.
