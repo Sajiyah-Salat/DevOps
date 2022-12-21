@@ -27,7 +27,7 @@ kubectl create deployment <name> --image <image name>
 kubectl create deployment mynginx --image nginx
 ```
 
-- To sacle the deployment (increase replicas)
+- To scale the deployment (increase replicas)
 
 ```
 kubectl scale deployment <deployment name> --replicas <no of replicas>
@@ -40,7 +40,7 @@ kubectl scale deployment mynginx --replicas 2
 kubectl get all
 ```
 
-- To get the get details from the a particular namespace
+- To get the get details from a particular namespace
 
 ```bash
 kubectl get all -n <namespace name>
@@ -112,7 +112,7 @@ kubectl delete pod <pod-name>
 kubectl logs <pod-name>
 ```
 
-- To check logs or sh/bash of a container inside a pod. That if pods have multiple container an we have enter inside a container
+- To check logs or sh/bash of a container inside a pod,if pods have multiple container,we can enter inside a container
 
 ```bash
 kube exec -it <pod-name> -c <container-name> -- <bash command>
@@ -189,7 +189,7 @@ kubectl get pv
 kubectl get pvc
 ```
 
-- To chnage default/active namespace
+- To change default/active namespace
 
 ```bash
 kubectl config set-context --current --namespace=<namespace name>
